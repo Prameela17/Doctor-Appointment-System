@@ -642,13 +642,18 @@ ul{
 	}
 
 	.footer-logo input{
-		margin-top: 32px;
+		margin-top: 42px;
 		margin-left: 50px;
 		margin-bottom: 40px;
 	}
 
+	.row{
+		margin-top: 20px;
+		margin-left: -80px;
+	}
+
 	.footer-logo button{
-		margin-top: 32px;
+		margin-top: 42px;
 	}
 
 	.footer-col{
