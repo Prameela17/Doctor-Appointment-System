@@ -63,29 +63,106 @@
     font-weight: bold;
     background-color: white;
     color: black;
+}
+
+.navbar .sideMenuButton {
+	font-size: 30px;
     margin-left: 20px;
+	font-weight: bolder;
+	cursor: pointer;
+	display: none;
+}
+
+/* responsive navbar css */
+@media screen and (max-width: 600px) {
+	.navbar .sideMenuButton {
+		display: flex;
+	}
+
+	.nav-items {
+		display: none;
+	}
+
+    #search {
+        width: 200px;
+        height: 30px;
+        padding: 0 30px;
+    }
+
+    .search-icon img {
+        position: absolute;
+        top: 8px;
+        left: 50px;
+    }
+
+	.sideNavigationBar {
+		display: block !important;
+	}
+}
+
+.sideNavigationBar {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0%;
+	background-color: rgb(117, 214, 247);
+	overflow-x: hidden;
+	transition: 0.3s ease-in;
+	padding-top: 60px;
+	display: none;
+}
+
+.sideNavigationBar a {
+	padding: 8px 8px 8px 40px;
+	display: block;
+	font-size: 25px;
+	font-weight: 500;
+	color: black;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.sideNavigationBar a button {
+	padding: 20px 20px;
+	border-radius: 10px;
+	color: black;
+	font-size: 16px;
+	border-style: none;
+	font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+	color: black;
+}
+
+.sideNavigationBar .closeButton {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 20px;
+	margin-left: 50px;
 }
 
 .container1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    /* text-wrap: wrap; */
 	margin: 2% 5%;
 }
 
 .side1 h1 {
-    font-size: 48px;
+    font-size: 44px;
 	font-weight: bolder;
 	margin-bottom: 10px;
+    margin-right: 20px;
 }
 .side1 h2 {
-	font-size: 30px;
-	margin: 30px 0;
+	font-size: 25px;
+	margin: 20px 0;
 }
 
 .label1 {
-	font-size: 25px;
+	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 8px;
 	font-weight: bolder;
@@ -95,9 +172,9 @@
     padding: 0 20px;
 }
 
-.input3 input{
-    padding: 0 60px;
-}
+#input3{
+    padding: 0 10px;
+} 
 
 .side1 button{
     border-style: none;
@@ -105,7 +182,7 @@
     height: 30px;
     font-weight: bolder;
     margin-top: 20px;
-    margin-left: 140px;
+    margin-left: 20px;
     background-color: rgb(117, 214, 247);
 }
 .side1 button a {
@@ -119,7 +196,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    /* text-wrap: wrap; */
+    text-wrap: wrap;
 	margin: 2% 5%;
 }
 .side4 h1 {
@@ -144,6 +221,61 @@
 .side4 button a {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 1060px) {
+	.side2 img {
+		width: 100px;
+		height: 90%;
+	}
+
+	.side1 h1 {
+		font-size: 20px;
+	}
+
+    .side3 img {
+		width: 250px;
+	}
+
+	.side4 h1 {
+		font-size: 25px;
+	}
+
+	.side1 p {
+		font-size: 17px;
+	}
+
+	.side4 p {
+		font-size: 14px;
+	}
+
+    .input1 .label1 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+	.side1 h1 {
+		font-size: 25px;
+	}
+    .side2 img {
+		width: 100px;
+        height: 200px;
+	}
+
+    .side4 button {
+        width: 180px;
+    }
+
+	.line {
+		flex-direction: column;
+	}
+
+	.line .side1 {
+		padding: 30px;
+        margin-top: -40px;
+	}
 }
 
 .health-care h1 {
@@ -172,48 +304,80 @@
     color: black;
 }
 
-section .topic img {
-    color: rgb(130, 206, 209);
-	font-size: 30px;
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-
 .specialist .boxes {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .specialist .boxes .box {
-	margin: 10px 70px;
-	max-width: calc(100% / 3 - 140px);
+	margin: 10px 10px;
+	max-width: 200px;
 	text-align: center;
 	border-radius: 10px;
-	padding: 30px 18px;
+	padding: 20px 18px;
 	box-shadow: 0 5px 10px rgb(130, 206, 209);
 	cursor: default;
 }
 
 .feedback h1 {
     font-size: 35px;
-    margin-left: 60px;
-    margin-top: 40px;
+    margin: 40px 60px;
 	font-weight: bolder;
 	margin-bottom: 30px;
 }
 .feedback .boxes {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .feedback .boxes .box {
-	margin: 10px 70px;
-	max-width: calc(100% / 3 - 140px);
+	margin: 10px 10px;
+	max-width: 200px;
 	text-align: center;
 	border-radius: 10px;
-	padding: 30px 18px;
+	padding: 20px 18px;
 	box-shadow: 0 5px 10px rgb(130, 206, 209);
 	cursor: default;
+}
+
+
+@media screen and (max-width: 1060px) {
+
+	.input1 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.side2 img {
+		width: 95%;
+		height: 90%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	section .box p {
+		font-size: 5px;
+	}
+
+    .specialist .boxes {
+        font-size: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.specialist .boxes .box {
+		max-width: 70%;
+	}
+
+	.feedback .boxes {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.feedback .boxes .box {
+		max-width: 70%;
+	}
 }
