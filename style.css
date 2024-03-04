@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 120px;
     background-color: rgb(117, 214, 247);
 }
 .search-icon{
@@ -148,6 +148,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 2% 5%;
+	padding: 0 80px;
 }
 
 .side1 h1 {
@@ -178,11 +179,11 @@
 
 .side1 button{
     border-style: none;
-    width: 160px;
+    width: 100px;
     height: 30px;
     font-weight: bolder;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
     background-color: rgb(117, 214, 247);
 }
 .side1 button a {
@@ -198,6 +199,7 @@
 	align-items: center;
     text-wrap: wrap;
 	margin: 2% 5%;
+	padding: 0 80px;
 }
 .side4 h1 {
     font-size: 40px;
@@ -224,6 +226,7 @@
 }
 
 @media screen and (max-width: 1060px) {
+
 	.side2 img {
 		width: 100px;
 		height: 90%;
@@ -256,8 +259,22 @@
 }
 
 @media screen and (max-width: 600px) {
+
+	.navbar {
+		padding: 0 30px;
+	}
+	.container1 {
+		padding: 0;
+	}
+	.container2 {
+		padding: 0;
+	}
+
 	.side1 h1 {
-		font-size: 25px;
+		font-size: 20px;
+	}
+	.side1 h2 {
+		font-size: 15px;
 	}
     .side2 img {
 		width: 100px;
@@ -276,6 +293,10 @@
 		padding: 30px;
         margin-top: -40px;
 	}
+}
+
+.health-care {
+	padding: 0 80px;
 }
 
 .health-care h1 {
@@ -325,6 +346,7 @@
     margin: 40px 60px;
 	font-weight: bolder;
 	margin-bottom: 30px;
+	padding: 0 80px;
 }
 .feedback .boxes {
 	display: flex;
@@ -358,6 +380,14 @@
 
 @media screen and (max-width: 600px) {
 
+	.health-care {
+		margin-left: -120px;
+	}
+
+	.feedback h1 {
+		margin-left: -60px;
+	}
+
 	section .box p {
 		font-size: 5px;
 	}
@@ -365,19 +395,21 @@
     .specialist .boxes {
         font-size: 20px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		
 	}
 
 	.specialist .boxes .box {
-		max-width: 70%;
+		max-width: 28%;
 	}
 
 	.feedback .boxes {
+		font-size: 20px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	.feedback .boxes .box {
-		max-width: 70%;
+		max-width: 28%;
 	}
 }
